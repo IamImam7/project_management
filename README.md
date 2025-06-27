@@ -5,9 +5,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<p align="center">
+
   ![Image](https://github.com/user-attachments/assets/edabf255-8113-4be2-b800-fa741d3d396a)
-</p>
+
 
 **InventarisPro** adalah aplikasi web berbasis PHP dengan framework Laravel yang dirancang untuk membantu bisnis dalam mengelola stok inventaris mereka secara efisien. Aplikasi ini menyediakan fitur-fitur penting untuk melacak produk, kategori, supplier, serta transaksi barang masuk dan keluar. Dengan antarmuka yang responsif berkat Tailwind CSS, InventarisPro mudah digunakan di berbagai perangkat.
 
@@ -117,20 +117,20 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi ini di 
 ## 🖼️ Screenshots
 
 
-<p align="center">
+
  ![Image](https://github.com/user-attachments/assets/6af41341-046d-4942-ae7b-0598b6cedcb5)
-</p>
 
-<p align="center">
+
+
   ![Image](https://github.com/user-attachments/assets/f1951663-41f2-4764-b56a-f163404c8e2b)
-</p>
 
-<p align="center">
+
+
   ![Image](https://github.com/user-attachments/assets/d6fe08d0-a48b-4d00-8e7a-3766f1465fc9)
-</p>
-<p align="center">
+
+
   ![Image](https://github.com/user-attachments/assets/af2be35d-1f1a-4938-9977-b4d8260661ab)
-</p>
+
 
 ## 🚦 Rencana Pengembangan
 
