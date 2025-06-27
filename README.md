@@ -1,61 +1,152 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# InventarisPro - Aplikasi Manajemen Inventaris Modern
+
+[![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php)](https://www.php.net/)
+[![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  ![Image](https://github.com/user-attachments/assets/edabf255-8113-4be2-b800-fa741d3d396a)
 </p>
 
-## About Laravel
+**InventarisPro** adalah aplikasi web berbasis PHP dengan framework Laravel yang dirancang untuk membantu bisnis dalam mengelola stok inventaris mereka secara efisien. Aplikasi ini menyediakan fitur-fitur penting untuk melacak produk, kategori, supplier, serta transaksi barang masuk dan keluar. Dengan antarmuka yang responsif berkat Tailwind CSS, InventarisPro mudah digunakan di berbagai perangkat.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* **Dashboard Informatif**: Menyajikan ringkasan data inventaris penting seperti total produk, stok rendah, dan transaksi terbaru.
+* **Manajemen Produk**: Tambah, lihat, edit, cetak barcode dan hapus informasi produk termasuk nama, SKU, deskripsi, dan harga.
+* **Manajemen Kategori**: Kategorikan produk untuk pengelolaan yang lebih terstruktur.
+* **Manajemen Supplier**: Kelola informasi supplier produk Anda.
+* **Transaksi Barang Masuk**: Catat penerimaan barang dari supplier dengan detail tanggal, produk, dan jumlah.
+* **Transaksi Barang Keluar**: Catat penjualan atau pengeluaran barang dengan detail tanggal, produk, dan jumlah.
+* **Laporan Stok**: Lihat daftar stok terkini untuk semua produk.
+* **Riwayat Transaksi**: Lacak semua transaksi barang masuk dan keluar dan cetak laporan dengan format pdf.
+* **Autentikasi Pengguna**: Sistem login dan registrasi yang aman.
+* **Hak Akses Pengguna** (rencana pengembangan): Implementasi peran pengguna (Admin, Staf Gudang) dengan hak akses yang berbeda.
+* **Antarmuka Responsif**: Dirancang dengan Tailwind CSS untuk tampilan yang optimal di berbagai ukuran layar.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Teknologi yang Digunakan
 
-## Learning Laravel
+* **Backend**: [PHP](https://www.php.net/) ^8.1
+* **Framework**: [Laravel](https://laravel.com/) ^10.0
+* **Frontend**: [Blade](https://laravel.com/docs/10.x/blade), [Tailwind CSS](https://tailwindcss.com/) ^3.0
+* **Database**: [MySQL](https://www.mysql.com/) atau [PostgreSQL](https://www.postgresql.org/)
+* **Package Tambahan**:
+    * `laravel/ui`: Untuk scaffolding dasar UI (jika digunakan)
+    * `laravel/sanctum` atau `laravel/passport` (rencana pengembangan untuk API)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ⚙️ Cara Instalasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi ini di lingkungan lokal Anda.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1.  **Clone Repository:**
+    Buka terminal Anda dan jalankan perintah:
+    \`\`\`bash
+    git clone https://github.com/IamImam7/project_management
+    cd nproject_management
+    \`\`\`
 
-## Laravel Sponsors
+2.  **Install Composer Dependencies:**
+    Pastikan Composer terinstal di sistem Anda. Jalankan:
+    \`\`\`bash
+    composer install
+    \`\`\`
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+3.  **Salin File Environment:**
+    Salin file `.env.example` menjadi `.env`:
+    \`\`\`bash
+    cp .env.example .env
+    \`\`\`
 
-### Premium Partners
+4.  **Generate Application Key:**
+    Hasilkan kunci aplikasi Laravel:
+    \`\`\`bash
+    php artisan key:generate
+    \`\`\`
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+5.  **Konfigurasi Database:**
+    Buka file `.env` dan konfigurasi detail koneksi database Anda (nama database, username, password).
 
-## Contributing
+    \`\`\env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=nama_database_anda
+    DB_USERNAME=username_database
+    DB_PASSWORD=password_database
+    \`\`\`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6.  **Jalankan Migrasi:**
+    Buat tabel-tabel database:
+    \`\`\`bash
+    php artisan migrate --seed
+    \`\`\`
+    (Opsi `--seed` akan menjalankan seeders jika ada, contohnya untuk membuat user admin awal atau data dummy.)
 
-## Code of Conduct
+7.  **Install NPM Dependencies:**
+    Pastikan Node.js dan NPM terinstal di sistem Anda. Jalankan:
+    \`\`\`bash
+    npm install
+    \`\`\`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+8.  **Compile Assets:**
+    Kompilasi file CSS dan JavaScript:
+    \`\`\`bash
+    npm run dev
+    \`\`\`
 
-## Security Vulnerabilities
+9.  **Start Development Server:**
+    Jalankan server pengembangan Laravel:
+    \`\`\`bash
+    php artisan serve
+    \`\`\`
+    Aplikasi akan berjalan di `http://127.0.0.1:8000`.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 Cara Penggunaan
 
-## License
+1.  Buka browser Anda dan kunjungi `http://127.0.0.1:8000`.
+2.  Lakukan registrasi akun baru atau gunakan akun default jika disediakan oleh seeders atau menggunakan tinker dengan :
+    ```php
+    $user = \App\Models\User::find(1);
+    $user->assignRole('Admin');
+    exit;
+    ```
+4.  Navigasi melalui menu di sidebar untuk mengelola produk, kategori, supplier, dan melakukan transaksi stok.
+5.  Lihat laporan stok dan riwayat transaksi melalui menu laporan.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🖼️ Screenshots
+
+
+<p align="center">
+ ![Image](https://github.com/user-attachments/assets/6af41341-046d-4942-ae7b-0598b6cedcb5)
+</p>
+
+<p align="center">
+  ![Image](https://github.com/user-attachments/assets/f1951663-41f2-4764-b56a-f163404c8e2b)
+</p>
+
+<p align="center">
+  ![Image](https://github.com/user-attachments/assets/d6fe08d0-a48b-4d00-8e7a-3766f1465fc9)
+</p>
+<p align="center">
+  ![Image](https://github.com/user-attachments/assets/af2be35d-1f1a-4938-9977-b4d8260661ab)
+</p>
+
+## 🚦 Rencana Pengembangan
+
+Berikut adalah beberapa fitur yang direncanakan untuk pengembangan di masa mendatang:
+
+* Implementasi sistem peran dan hak akses pengguna yang lebih lengkap (Admin, Staf Gudang).
+* Integrasi barcode scanner untuk mempercepat proses input.
+* Notifikasi email untuk stok rendah.
+* API untuk integrasi dengan sistem lain.
+
+
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah lisensi [MIT License](LICENSE).
+
+---
+
+Dibuat dengan Niat oleh Saya Sendiri 
